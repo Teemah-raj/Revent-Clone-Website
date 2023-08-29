@@ -1,0 +1,89 @@
+@use '/src/app/@core/styles/abstracts/media-query' as *;
+
+#vybecash {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  .home-top {
+    background-image: linear-gradient(#ffc700eb 70%, white 30%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    margin-top: 0rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    @include wf-media-query-max(wf-md) {
+      background-position: center;
+      background-size: cover;
+      background-position-x: center;
+      margin-top: 4rem;
+    }
+  }
+
+  .yellow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8rem;
+
+    @include wf-media-query-max(wf-md) {
+      width: 100%;
+      text-align: center;
+      padding-top: 4rem;
+    }
+  }
+
+  h1 {
+    font-size: 5.5rem;
+
+    @include wf-media-query-max(wf-md) {
+      font-size: 2rem;
+    }
+  }
+
+  .p {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 0.9375rem;
+
+    @include wf-media-query-max(wf-md) {
+      text-align: center;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .boxes {
+    display: flex;
+    gap: 0.5rem;
+
+    @include wf-media-query-max(wf-md) {
+      width: 100%;
+    }
+  }
+
+  img {
+    @include wf-media-query-max(wf-md) {
+      width: 100%;
+    }
+  }
+
+  h5 {
+    line-height: 2.25rem;
+    letter-spacing: 0.025rem;
+  }
+
+  p {
+    display: flex;
+    padding: 0.25rem 0.625rem;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border-radius: 0.25rem;
+  }
+}

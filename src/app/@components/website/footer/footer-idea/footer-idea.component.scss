@@ -1,0 +1,34 @@
+@use '/src/app/@core/styles/abstracts/media-query' as *;
+
+#idea {
+  width: 100%;
+  height: 31.13rem;
+  background-color: var(--wf-accent-color-600);
+  background-image: url('/assets/images/Revent-pattern.png');
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--wf-white);
+
+  h1 {
+    line-height: 7rem;
+  }
+
+  .btn {
+    width: 16.1875rem;
+    height: 3.75rem;
+    border-radius: 2.5rem;
+    background-color: var(--wf-white);
+    color: var(--wf-primary-color-600);
+    margin: 2rem 0rem;
+
+    @include wf-media-query-max(wf-md) {
+      width: 15rem;
+      height: 3rem;
+    }
+  }
+}

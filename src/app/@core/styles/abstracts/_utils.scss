@@ -1,0 +1,21 @@
+@use 'theme' as *;
+
+.wf-text-primary {
+  color: var(--wf-primary-color) !important;
+}
+
+.wf-text-accent {
+  color: var(--wf-accent-color) !important;
+}
+
+.wf-text-black {
+  color: var(--wf-black) !important;
+}
+
+.wf-text-white {
+  color: var(--wf-white) !important;
+}
+
+.wf-bg-primary {
+  background: var(--wf-primary-color) !important;
+}

@@ -1,0 +1,53 @@
+@use '@angular/material' as mat;
+
+@use '../abstracts/colors' as *;
+
+@include mat.core();
+
+$wf-primary: mat.define-palette($mat-wf-primary-map, 500);
+
+$wf-accent: mat.define-palette($mat-wf-accent-map, 500);
+
+$wf-warn: mat.define-palette($mat-wf-warn-map, 500);
+
+$wf-typography: mat.define-typography-config(
+  $font-family: 'Greycliff CF, sans-serif',
+);
+
+$wf-light: mat.define-light-theme(
+  (
+    color: (
+      primary: $wf-primary,
+      accent: $wf-accent,
+      warn: $wf-warn,
+    ),
+    typography: $wf-typography,
+  )
+);
+
+$wf-dark: mat.define-dark-theme(
+  (
+    color: (
+      primary: $wf-primary,
+      accent: $wf-accent,
+      warn: $wf-warn,
+    ),
+    typography: $wf-typography,
+  )
+);
+
+/* This will disable the style duplication warning */
+mat.$theme-ignore-duplication-warnings: true;
+/***************************************************/
+
+.wf-theme {
+  // &.light {
+  @include mat.all-component-themes($wf-light);
+  // }
+
+  // &.dark {
+  //   @include mat.all-component-themes($wf-dark);
+  // }
+}
+
+// @include angular-material-typography($wf-typography);

@@ -1,0 +1,14 @@
+@use '/src/app/@core/styles/abstracts/media-query' as *;
+
+#header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 99;
+
+  ul {
+    @include wf-media-query-max(wf-md) {
+      background-color: var(--wf-white);
+    }
+  }
+}

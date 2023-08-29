@@ -1,0 +1,42 @@
+@use '/src/app/@core/styles/abstracts/media-query' as *;
+
+#enterprise {
+  width: 100%;
+  height: 18.56rem;
+  border: 0.06rem;
+  border-top: 1px solid black;
+  text-align: center;
+  justify-content: center;
+
+  @include wf-media-query-max(wf-md) {
+    height: 60rem;
+  }
+
+  .startup {
+    line-height: 2rem;
+    letter-spacing: 0.03rem;
+    padding-top: 5rem;
+
+    @include wf-media-query-max(wf-md) {
+      width: 100%;
+    }
+  }
+
+  .hold {
+    align-items: center;
+  }
+
+  .images {
+    display: inline-flex;
+    align-items: center;
+    gap: 5rem;
+    margin: 4.38rem 0rem;
+
+    @include wf-media-query-max(wf-md) {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding-top: 2rem;
+    }
+  }
+}

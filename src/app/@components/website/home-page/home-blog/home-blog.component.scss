@@ -1,0 +1,75 @@
+@use '/src/app/@core/styles/abstracts/media-query' as *;
+
+#blog {
+  width: 100%;
+  padding: 7.25rem 0rem 7.25rem 0rem;
+
+  @include wf-media-query-max(wf-md) {
+    width: 100%;
+    display: grid;
+    place-content: center;
+    place-items: center;
+  }
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+  }
+
+  .expand-icon-box {
+    width: 2.81rem;
+    height: 2.81rem;
+    border-radius: 0rem 1.25rem 0rem 0rem;
+    background-color: var(--wf-accent-color-800);
+    display: grid;
+    place-content: center;
+    place-items: center;
+  }
+
+  .details {
+    justify-content: space-between;
+
+    @include wf-media-query-max(wf-md) {
+      width: 20rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  h3 {
+    width: 21.6rem;
+  }
+
+  .recent {
+    color: var(--wf-accent-color-700);
+  }
+
+  a {
+    color: var(--wf-accent-color-400);
+    text-decoration: none;
+    // font-family: Greycliff CF;
+    line-height: 2.25rem;
+    font-size: 0.92rem;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    font-size: 1.5rem;
+  }
+
+  p {
+    width: 21.6rem;
+
+    @include wf-media-query-max(wf-md) {
+      width: 20rem;
+    }
+  }
+
+  .box {
+    @include wf-media-query-max(wf-md) {
+      padding-top: 2rem;
+    }
+  }
+}

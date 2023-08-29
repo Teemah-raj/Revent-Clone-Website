@@ -1,0 +1,27 @@
+@use '../abstracts/theme' as *;
+
+.wf-notification-success,
+.wf-notification-warning,
+.wf-notification-error {
+  border-radius: 0.25rem !important;
+  padding: 0.75rem 1rem !important;
+  min-height: 3rem !important;
+  -webkit-box-shadow: 0px 10px 25px rgba(232, 232, 232, 0.5) !important;
+  box-shadow: 0px 10px 25px rgba(232, 232, 232, 0.5) !important;
+}
+
+.wf-notification-success {
+  color: var(--wf-success) !important;
+  background: var(--wf-success-50) !important;
+}
+
+.wf-notification-warning {
+  // color: var(--wf-warning) !important;
+  color: var(--wf-black) !important;
+  background: var(--wf-warning-50) !important;
+}
+
+.wf-notification-error {
+  color: var(--wf-error) !important;
+  background: var(--wf-error-50) !important;
+}

@@ -1,0 +1,98 @@
+@use '/src/app/@core/styles/abstracts/media-query' as *;
+
+#client {
+  width: 100%;
+
+  .hold {
+    background: url('/assets/images/client.png'), var(--wf-black);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+
+    @include wf-media-query-max(wf-md) {
+      background-position: center;
+      background-size: cover;
+      background-position-x: center;
+    }
+  }
+
+  .details {
+    align-items: center;
+    height: 60.38rem;
+    color: var(--wf-white);
+
+    @include wf-media-query-max(wf-md) {
+      height: 40rem;
+    }
+
+    @include wf-media-query-max(wf-sm) {
+      height: 50rem;
+    }
+  }
+
+  p {
+    text-align: center;
+    line-height: 2rem;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .remark {
+    width: 70%;
+    background: var(--wf-primary-color-900);
+    padding: 5rem 5rem 3rem 5rem;
+
+    @include wf-media-query-max(wf-md) {
+      width: 100%;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+  }
+
+  .text {
+    width: 45.93rem;
+
+    @include wf-media-query-max(wf-md) {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  .remark-text {
+    padding-bottom: 2rem;
+
+    @include wf-media-query-max(wf-md) {
+      width: 100%;
+      padding-bottom: 1rem;
+      margin: 0rem;
+      line-height: 1rem;
+    }
+  }
+
+  .pic {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    @include wf-media-query-max(wf-md) {
+      padding: 1rem 0rem 1rem 1rem;
+      margin: 0;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  .sterling {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .name {
+    line-height: 1rem;
+  }
+}

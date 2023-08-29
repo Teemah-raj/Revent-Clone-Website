@@ -1,0 +1,104 @@
+@use '/src/app/@core/styles/abstracts/media-query' as *;
+
+#overview {
+  width: 100%;
+
+  .box {
+    gap: 10rem;
+    justify-content: center;
+    padding-top: 5rem;
+
+    @include wf-media-query-max(wf-md) {
+      gap: 1rem;
+      flex-direction: column;
+    }
+  }
+
+  .p {
+    display: flex;
+    padding: 0.25rem 0.625rem;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border-radius: 0.25rem;
+    background-color: pink;
+
+    @include wf-media-query-max(wf-md) {
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .par {
+    gap: 1rem;
+
+    @include wf-media-query-max(wf-md) {
+      width: 100%;
+    }
+  }
+
+  .btn {
+    width: 16.1875rem;
+    height: 3.75rem;
+    border-radius: 2.5rem;
+    background-color: var(--wf-primary-color-600);
+    color: var(--wf-white);
+    margin: 2rem 0rem;
+
+    @include wf-media-query-max(wf-md) {
+      width: 14rem;
+      margin: 1rem 0rem;
+    }
+  }
+
+  .back {
+    display: flex;
+    align-items: flex-start;
+    gap: 5.375rem;
+
+    @include wf-media-query-max(wf-md) {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+
+  .h1 {
+    width: 50.125rem;
+
+    @include wf-media-query-max(wf-md) {
+      width: 100%;
+    }
+  }
+
+  .holder {
+    display: flex;
+    width: 53.125rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    @include wf-media-query-max(wf-md) {
+      width: 100%;
+    }
+  }
+
+  .box-1 {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    gap: 19.7rem;
+
+    @include wf-media-query-max(wf-md) {
+      gap: 1rem;
+      flex-direction: column;
+    }
+  }
+
+  .p1 {
+    width: 47rem;
+
+    @include wf-media-query-max(wf-md) {
+      width: 100%;
+    }
+  }
+}

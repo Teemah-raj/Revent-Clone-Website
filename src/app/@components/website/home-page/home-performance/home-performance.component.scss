@@ -1,0 +1,78 @@
+@use '/src/app/@core/styles/abstracts/media-query' as *;
+
+#performance {
+  width: 100%;
+  height: 21.62rem;
+  background: var(--wf-accent-color-950);
+  color: var(--wf-white);
+
+  @include wf-media-query-max(wf-md) {
+    height: 50rem;
+  }
+
+  .container-md {
+    display: flex;
+    justify-content: center;
+
+    @include wf-media-query-max(wf-md) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .inside {
+    margin: auto;
+    text-align: center;
+  }
+
+  .line {
+    width: 0.03125rem;
+    height: 13.875rem;
+    background-color: var(--wf-accent-color-900);
+    margin: 60px 10px;
+
+    @include wf-media-query-max(wf-md) {
+      width: 0;
+      height: 0;
+    }
+  }
+
+  .detail-1 {
+    width: 12rem;
+    line-height: 3rem;
+    letter-spacing: 0.004rem;
+    text-align: center;
+
+    @include wf-media-query-max(wf-md) {
+      padding-top: 6rem;
+    }
+  }
+
+  .detail {
+    display: flex;
+    width: 14.75rem;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 3.79rem;
+
+    @include wf-media-query-max(wf-md) {
+      margin-right: 0;
+      padding-bottom: 1rem;
+    }
+  }
+
+  .box {
+    @include wf-media-query-max(wf-md) {
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 2rem 2rem 2rem;
+      border: 1px solid var(--wf-accent-color-900);
+      margin-top: -4rem;
+    }
+  }
+
+  p {
+    width: 11.5rem;
+  }
+}

@@ -1,0 +1,39 @@
+@use '/src/app/@core/styles/abstracts/media-query' as *;
+
+#homeServices {
+  width: 100%;
+  padding: 4.75rem 8.94rem 10.4rem 9rem;
+  background-color: var(--wf-neutral-100);
+
+  @include wf-media-query-max(wf-md) {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  svg {
+    @include wf-media-query-max(wf-md) {
+      width: 100%;
+    }
+  }
+
+  p {
+    width: 40.5rem;
+    line-height: 2rem;
+    color: var(--wf-accent-color-950);
+
+    @include wf-media-query-max(wf-md) {
+      width: 100%;
+    }
+  }
+
+  h1 {
+    width: 49.12rem;
+    line-height: 3.75rem;
+    color: var(--wf-neutral-700);
+
+    @include wf-media-query-max(wf-md) {
+      width: 100%;
+      line-height: 2rem;
+    }
+  }
+}
