@@ -21,6 +21,7 @@
     width: 53.0625rem;
     flex-direction: column;
     align-items: flex-start;
+    color: var(--wf-neutral-400);
 
     @include wf-media-query-max(wf-md) {
       width: 100%;
@@ -28,7 +29,7 @@
   }
 
   .img {
-    margin-left: -4.5rem;
+    margin-left: -2.5rem;
     padding: 0;
 
     @include wf-media-query-max(wf-md) {
@@ -40,7 +41,7 @@
   .images {
     display: flex;
     width: 10.1875rem;
-    margin-top: -7rem;
+    margin-top: -4rem;
     margin-left: -4.5rem;
     padding: 0;
 
@@ -76,5 +77,13 @@
       height: 2.8rem;
       margin-top: 1.5rem;
     }
+  }
+
+  .design {
+    color: var(--wf-neutral-600);
+  }
+
+  h1 {
+    color: #000;
   }
 }

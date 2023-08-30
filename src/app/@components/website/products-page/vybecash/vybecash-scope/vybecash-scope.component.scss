@@ -2,7 +2,8 @@
 
 #scope {
   width: 100%;
-  background: #005ede;
+  background: var(--wf-primary-color-700);
+  color: var(--wf-neutral-100);
   padding: 7.8125rem 0rem 9.5rem 0rem;
 
   @include wf-media-query-max(wf-md) {
@@ -13,7 +14,6 @@
     display: flex;
     align-items: flex-start;
     gap: 14.7rem;
-    color: white;
 
     @include wf-media-query-max(wf-md) {
       display: flex;
@@ -23,7 +23,6 @@
   }
 
   .scope {
-    color: #f4f4f4;
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 2.25rem;
@@ -41,9 +40,9 @@
     align-items: flex-start;
     gap: 0.625rem;
     border-radius: 0.25rem;
-    background: #fee6fa;
+    background: var(--wf-primary-color-100);
     margin-top: 0.7rem;
-    color: #0e061b;
+    color: var(--wf-primary-color-900);
 
     @include wf-media-query-max(wf-md) {
       width: 100%;
@@ -74,5 +73,9 @@
       width: 100%;
       gap: 1rem;
     }
+  }
+
+  h1 {
+    color: #fff;
   }
 }

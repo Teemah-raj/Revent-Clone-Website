@@ -4,7 +4,6 @@
   width: 100%;
   background-color: var(--wf-accent-color-950);
   height: 50rem;
-  color: white;
 
   @include wf-media-query-max(wf-md) {
     height: 100%;
@@ -46,8 +45,18 @@
   }
 
   h1 {
+    color: #fff;
+
     @include wf-media-query-max(wf-md) {
       width: 100%;
     }
+  }
+
+  h4 {
+    color: var(--wf-neutral-600);
+  }
+
+  p {
+    color: var(--wf-neutral-100);
   }
 }

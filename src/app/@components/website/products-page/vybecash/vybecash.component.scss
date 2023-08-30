@@ -6,7 +6,7 @@
   margin: 0;
 
   .home-top {
-    background-image: linear-gradient(#ffc700eb 70%, white 30%);
+    background-image: linear-gradient(var(--wf-warning) 70%, white 30%);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100%;
@@ -69,6 +69,8 @@
   }
 
   img {
+    padding-top: 1rem;
+
     @include wf-media-query-max(wf-md) {
       width: 100%;
     }
@@ -85,5 +87,17 @@
     align-items: flex-start;
     gap: 0.625rem;
     border-radius: 0.25rem;
+  }
+
+  .p1 {
+    background-color: var(--wf-primary-color-100);
+  }
+
+  .p2 {
+    background-color: var(--wf-primary-color-200);
+  }
+
+  .p3 {
+    background-color: var(--wf-primary-color-50);
   }
 }

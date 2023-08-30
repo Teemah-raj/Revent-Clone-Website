@@ -6,7 +6,10 @@
   margin: 0;
 
   .home-top {
-    background: linear-gradient(#011b69 70%, var(--wf-white) 30%);
+    background: linear-gradient(
+      var(--wf-primary-color-400) 70%,
+      var(--wf-white) 30%
+    );
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100%;
@@ -80,6 +83,8 @@
   }
 
   img {
+    padding-top: 1rem;
+
     @include wf-media-query-max(wf-md) {
       width: 100%;
     }
@@ -92,5 +97,17 @@
     gap: 0.625rem;
     border-radius: 0.25rem;
     color: var(--wf-black);
+  }
+
+  .p1 {
+    background-color: var(--wf-primary-color-50);
+  }
+
+  .p2 {
+    background-color: var(--wf-primary-color-100);
+  }
+
+  .p3 {
+    background-color: var(--wf-primary-color-200);
   }
 }

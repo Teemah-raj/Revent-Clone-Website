@@ -65,6 +65,7 @@
 
   .h1 {
     width: 50.125rem;
+    color: var(--wf-neutral-900);
 
     @include wf-media-query-max(wf-md) {
       width: 100%;
@@ -96,9 +97,39 @@
 
   .p1 {
     width: 47rem;
+    color: var(--wf-neutral-400);
 
     @include wf-media-query-max(wf-md) {
       width: 100%;
     }
+  }
+
+  .p-1 {
+    background-color: var(--wf-primary-color-100);
+  }
+
+  .p2 {
+    background-color: var(--wf-primary-color-200);
+  }
+
+  .p3 {
+    color: var(--wf-accent-color-300);
+    background-color: var(--wf-accent-color-100);
+  }
+
+  .in {
+    color: var(--wf-neutral-400);
+  }
+
+  h5 {
+    color: var(--wf-neutral-300);
+  }
+
+  h4 {
+    color: var(--wf-neutral-600);
+  }
+
+  h1 {
+    color: #000;
   }
 }

@@ -101,24 +101,24 @@ $mat-wf-warn-map: (
 
 /***********Theme 1************/
 $wf-primary: #4e33ff;
-$wf-primary-50: #f6f5ff;
-$wf-primary-100: #dcd6ff;
-$wf-primary-200: #b8adff;
+$wf-primary-50: #dedede; //in use
+$wf-primary-100: #fee6fa; //in use
+$wf-primary-200: #e3d6f6; //in use
 $wf-primary-300: #9585ff;
-$wf-primary-400: #715cff;
+$wf-primary-400: #011b69; //in use
 $wf-primary-600: #7433d3; //in use
-$wf-primary-700: #1900bf;
-$wf-primary-800: #0f0073;
+$wf-primary-700: #005ede; //in use
+$wf-primary-800: #011b69; //in use
 $wf-primary-900: #0e061b; //in use
 
 $wf-primary-transparent: transparentize($wf-primary, 0.95);
 
 $wf-accent: #fe337a;
-$wf-accent-50: #fff5f8;
-$wf-accent-100: #ffe0eb;
+$wf-accent-50: #f8f5fd; //in use
+$wf-accent-100: #f4e8eb; //in use
 $wf-accent-200: #ffc2d7;
-$wf-accent-300: #ff99bd;
-$wf-accent-400: #4f3ccd;
+$wf-accent-300: #c9184a; //in use
+$wf-accent-400: #435a9c; //in use
 $wf-accent-600: #8247d7; //in use
 $wf-accent-700: #7433d3; //in use
 $wf-accent-800: #aa1d9b; //in use
@@ -128,10 +128,10 @@ $wf-accent-950: #0e0e0e; //in use
 $wf-accent-transparent: transparentize($wf-accent, 0.95);
 /******************************/
 
-$wf-success: #10b981;
+$wf-success: #00736eeb;
 $wf-success-50: #ecfdf5;
 
-$wf-warning: #f59e0b;
+$wf-warning: #ffc700eb; //in use
 $wf-warning-50: #fffbeb;
 
 $wf-error: #ef4444;
@@ -147,12 +147,12 @@ $wf-neutral: #64748b;
 $wf-neutral-50: #f7f8f9;
 $wf-neutral-100: #f4f4f4; //in use
 $wf-neutral-200: #d0d5dd;
-$wf-neutral-300: #b8c0cc;
-$wf-neutral-400: #a0abbb;
-$wf-neutral-600: #4b5768;
+$wf-neutral-300: #2e2b44; //in use
+$wf-neutral-400: #58556a; //in use
+$wf-neutral-600: #81808f; //in use
 $wf-neutral-700: #58556a; //in use
-$wf-neutral-800: #191d23;
-$wf-neutral-900: #0d0f11;
+$wf-neutral-800: #bababa29; //in use
+$wf-neutral-900: #18191c; //in use
 
 $themed-colors: (
   --wf-theme: (
